@@ -6,35 +6,43 @@
 
 {% block main %}
 {% include "flash_messages.html" %}
-<div class="">
-    <h1 id="page-title">Add Property</h1> 
+<div><div class="inline">
+ <h1 id="page-title"  >Add New property</h1> 
+   </div>
+<div class="forms-con border">
+   
     <form method = "POST" action="{{ url_for('property') }}" enctype="multipart/form-data">
         {{newPropertyForm.csrf_token}}
         <div class="contain">
             {{newPropertyForm.title.label(class="block")}}
             {{newPropertyForm.title(class="field col-md-8")}}
         </div>
-        <div class="contain">
+        <div class="contain ">
             {{newPropertyForm.description.label(class="block")}}
             {{newPropertyForm.description(class="field col-md-8")}}
         </div>
-        <div class="contain">
+		<div class="Row">
+        <div class="contain column s-ctn ">
             {{newPropertyForm.number_of_bedrooms.label(class="block")}}
-            {{newPropertyForm.number_of_bedrooms(class="field col-md-8")}}
+            {{newPropertyForm.number_of_bedrooms(class="field  col-md-8")}}
         </div>
-        <div class="contain">
+        <div class="contain column s-ctn ">
             {{newPropertyForm.number_of_bathrooms.label(class="block")}}
-            {{newPropertyForm.number_of_bathrooms(class="field col-md-8")}}
+            {{newPropertyForm.number_of_bathrooms(class="field  col-md-8")}}
         </div>
-        <div class="contain">
+		
+		  </div>
+		  <div class="Row">
+        <div class="contain column s-ctn  ">
             {{newPropertyForm.price.label(class="block")}}
             {{newPropertyForm.price(placeholder="eg. Kingston, Jamaica", class="field col-md-8")}}
         </div>
-		<div class="contain">
+		<div class="contain column s-ctn ">
             {{newPropertyForm.location.label(class="block")}}
             {{newPropertyForm.location(placeholder="eg. Kingston, Jamaica", class="field col-md-8")}}
         </div>
-        <div class="contain">
+		</div>
+        <div class="contain s-ctn">
             {{newPropertyForm.Type.label(class="block")}}
             {{newPropertyForm.Type(class="field col-md-8")}}
         </div>
@@ -43,9 +51,10 @@
             {{newPropertyForm.photo(class="field col-md-8")}}
         </div>
         <div class="contain">
-            <input type="submit" value="Add Property" class=""/>
+            <input type="submit" value="Add Property" class="btn-container"/>
         </div>
     </form>
+</div>
 </div>
 
 {% endblock %}
