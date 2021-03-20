@@ -3,22 +3,31 @@
 {% block main%}
 {% include "flash_messages.html"%}
 
-<div class="">
-    <h1 class="title">Properties</h1>
+<div class="prop-container ">
+    <h1 class="title2">Properties</h1>
+	<div class="paddding">
+	<div class="grid-container">
+	
     {% for property in properties %}
-    <div class="">
-        <image src="{{ url_for('get_image', filename=property['photo']) }}" class="">
-        <div class="">
-            <span class="">{{ property['title'] }}</span>
-            <span class="">{{ property['location'] }}</span>
-
-            <span class="">{{ property['price'] }}</span>
+    <div class="prop ">
+        <image src="{{ url_for('get_image', filename=property['photo']) }}" class="display-grid-pic">
+        <div class="text-paddding">
+		<div class="margin">
+            <span class="headr ">{{ property['title'] }}</span>
+			</div>
+			<div >			
+            <span class="faide">{{ property['location'] }}</span> 
+			</div>
+			<div class="margin-top">
+            <span class="btn-style">{{ property['price'] }}</span>
+			</div>
         </div>
-        <div class="">
+		<div class="view-btn" >
             <a class="" href="{{ url_for('inidi_property', propertyid=property['id']) }}">View Property</a>
         </div>
-    </div>
-    <br>
+ </div>
     {% endfor %}
+	</div>
+		</div>
 </div>
 {% endblock%}
