@@ -18,10 +18,19 @@
              </div>
 			<span class="blk margin-top text-box">{{propertyH.description}}</span>
 			<div class="Row margin-top2 ">
+			<div class="Row">
+			<image src="{{ url_for('static', filename='icon/bed.png')}}" class="icon-size faide blk">
 			<span class="blk">{{propertyH.number_of_bedrooms}} bedrooms</span>
-            <span class="blk margin-left">{{propertyH.number_of_bathrooms}} bathrooms</span>
+			</div>
+			<div class="Row  margin-left">
+			<image src="{{ url_for('static', filename='icon/icons8-shower-30.png')}}" class="icon-size faide blk">
+            <span class="blk">{{propertyH.number_of_bathrooms}} bathrooms</span>
+			</div>
              </div>
-			<span class="blk margin-top2">{{propertyH.location}}</span>
+			<div class="Row margin-top2">
+			 <image src="{{ url_for('static', filename='icon/placeholder.png')}}" class="icon-size faide blk">
+			<span class="blk ">{{propertyH.location}}</span>
+			</div>
 		<div class="margin-top2 view-btn2 color margin-bottom">	
         <a href="#" class="color">Send Realtor</a>
 		</div>
