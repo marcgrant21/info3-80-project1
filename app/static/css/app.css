@@ -10,7 +10,6 @@ body {
     margin: 0 auto;
     padding: 5px;
     width: 60%;
-    background-color:;
 }
 
 .border{
@@ -37,9 +36,7 @@ body {
 }
 
 .column {
-	display:;
-  float:;
- 
+
 }
 
 .btn-container{
@@ -55,8 +52,6 @@ body {
     
 }
 
-
-// view all property
 
 
 .prop-container{
@@ -95,7 +90,6 @@ body {
 .prop{
     margin-left: 15px;
     width: 250px;
-    margin:;
     background-color: white;
     margin-bottom: 2%;
     box-shadow: 0px 2px 8px grey;
@@ -146,7 +140,7 @@ body {
     display: block;
 }
 
-///
+
 .card{
     width: 25rem;
 }
@@ -160,7 +154,6 @@ body {
 .ind-prop{
     margin-left: 15px;
     width: 800px;
-    margin:;
     background-color: white;
     margin-bottom: 2%;
     box-shadow: 0px 2px 8px grey;
@@ -258,6 +251,13 @@ body {
 	padding-left: 20px;
 }
 
+
+.icon-size{
+	widows:16px;
+	height:16px;
+	margin-right:6px;
+	color: Grey;
+}
 
 
 
